@@ -1,0 +1,15 @@
+Automatização do abate:
+
+426 - Reprocesso de Quarteio    |CONCLUÍDO COM EXCEL| 2.912 ordens realizadas -> 243 horas  (5 min x 28 un x 26 day)
+141 - Abate Fiscal              |CONCLUÍDO COM EXCEL| 60 ordens -> 3 horas                  (3 min x 2 un x 26 day)
+463 - Despojo/Residuos/Farinha  |CONCLUÍDO COM EXCEL| 910 ordens -> 46 horas                (3 min x 36 un x 26 day)
+552 - Sangue Fetal              |EM ANDAMENTO, INTEGRAÇÃO DIRETA COM SQL| 936 ordens mês  -> 48h
+684 - Coração Peru              |EM ANDAMENTO, INTEGRAÇÃO DIRETA COM SQL| 364 ordens mês  -> h
+666 - Envoltórios               |EM ANDAMENTO, INTEGRAÇÃO DIRETA COM SQL| 936 ordens mês  -> 48h
+790 - ReRequarteio              |EM ANDAMENTO, INTEGRAÇÃO DIRETA COM SQL| 52 ordens mês   -> h
+2   - Miúdos                    |NÃO INICIADO| --> SERÁ INICIADO JÁ COM INTEGRAÇÃO COM SQL 936 ordens mês 78h
+
+
+STEP DE MANIPULAÇÃO DE DATAS
+STEP DE FRACIONAR PLANO
+STEP DE INCLUIR PARAMETROS SECUNDÁRIOS
