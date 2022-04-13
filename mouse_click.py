@@ -9,7 +9,7 @@ def clicar(x, y, qtdClick, botaoMouse, nomeJanela):
     
     aguardar.aguardarJanelaPorNome(nomeJanela)
     
-    time.sleep(0.3)
+    time.sleep(1)
     
     rpa.click(x, y, clicks=qtdClick, button=botaoMouse)
 

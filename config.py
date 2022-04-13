@@ -26,6 +26,7 @@ janelaERPCorporate = 'Corporate (PDP JBS)' #POSTERIORMENTE O '*' SERÁ TROCADO P
 janelaCFBPD266A = 'Planejamento de Produção por Período' #JNAELA DERIVADA DA PLANEJAMENTO DE PRODUÇÃOPOR PERIODO CFBPD266
 janelaCFBPD266B = 'Pré-Ordem de Produção' #JNAELA DERIVADA DA PLANEJAMENTO DE PRODUÇÃOPOR PERIODO CFBPD266
 cmd = 'C:\\Windows\\system32\\cmd.exe'
+janelaCFBPD266A_Filtro = 'Filtro Automático Personalizado'
 
 #CODIGOS JANELAS ERP
 planejamentoProdPeriodo = 'cFBPD266'

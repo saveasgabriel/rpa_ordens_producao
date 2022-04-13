@@ -9,6 +9,8 @@ import fracionar_plano_ERP as fracionar
 import buscar_novo_cod_ERP as buscarCod
 import taskkill_janela as taskkill
 
+
+"""
 login_ERP.fazerLogin(config.caminhoERP, config.nomeUser, config.senhaUser,
                      config.janelaAutenticacao, config.janelaERPCorporate,
                      config.genericosERPDireto+"Mensagem_Abertura_ERP.jpg")
@@ -45,13 +47,26 @@ cfbpd266.incluirParametro(config.janelaERPCorporate, 345, 501, 22, config.janela
                          ['374155'], 'press', 'f4', '', '')
 
 #FRACIONAR E GRAVAR ORDEM
-fracionar.fracionarPlano(57, 184, 1, 'left', config.janelaCFBPD266A, 
+fracionar.fracionarPlanoSimples(57, 184, 1, 'left', config.janelaCFBPD266A, 
                          config.CFBPD266Direto+"CodigoTela_CFBPD266_ERP.jpg", config.janelaERPCorporate)
 
 #BUSCAR COD DA ORDEM GERADA
 novo_cod = buscarCod.returnNovoCodOrdem(686, 183, 2, 'left', config.janelaERPCorporate, 
                              config.CFBPD266Direto+"CodigoTela_CFBPD266_ERP.jpg",
                              config.janelaCFBPD266A, config.CFBPD266Direto+"CodigoSubTela_CFBPD266A_ERP.jpg")
+"""
+
+fracionar.fracionarPlanoFiltro(81, 387, 250, 398, 585, 349, 617, 510,  1, 'left', 
+                               config.CFBPD266Direto+'FiltroPersonalizar_CFBPD266A_ERP.jpg', 
+                               config.CFBPD266Direto+'CampoFamilia_CFBPD266A_ERP.jpg', 
+                               config.CFBPD266Direto+'CampoRenFamiliaSubGrupo_CFBPD266A_ERP.jpg',
+                               config.CFBPD266Direto+"CaixaDialogoFiltro_CFBPD266A_ERP.jpg",
+                               config.CFBPD266Direto+"CaixaDialogoFiltro_BotaoConfirmar_CFBPD266A_ERP.jpg",
+                               config.CFBPD266Direto+"CodigoTela_CFBPD266_ERP.jpg",
+                               config.janelaERPCorporate,
+                               config.janelaCFBPD266A, 
+                               config.janelaCFBPD266A_Filtro,
+                               [('SANGUE FETAL', 'AB-MIUDO VERMELHO')], 1, 1)
 
 #FECHAR O ERP
 taskkill.close(config.fecharCorporate, config.cmd)
