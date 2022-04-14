@@ -10,7 +10,7 @@ def fazerLogin(caminhoERP, usuario, senha, janelaAutenticacao,janelaERPCorporate
     aguardar.aguardarJanelaPorNome(janelaAutenticacao)
     
     #Incluir senha de user
-    window = rpa.getWindowsWithTitle('Autenticação')[0]; window.activate()
+    window = rpa.getWindowsWithTitle(janelaAutenticacao)[0]; window.activate()
     rpa.hotkey('shift', 'tab');rpa.write(usuario);rpa.press('tab')
     rpa.write(senha);rpa.press('tab');rpa.write('pdp');rpa.press('enter')
     rpa.press('tab');rpa.press('enter')

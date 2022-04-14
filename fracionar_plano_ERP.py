@@ -3,7 +3,6 @@ import mouse_click as mouse
 import time
 import aguardar_janela_imagem as aguardar
 import incluir_parametros_cfbpd266 as parametrizar
-import config
 
 def fracionarPlanoSimples(x, y, qtdClick, botaoMouse, nomeJanelaAtual, imagemJanelaAguardar, nomeJanelaAguardar):
     time.sleep(1)
@@ -28,8 +27,7 @@ def fracionarPlanoSimples(x, y, qtdClick, botaoMouse, nomeJanelaAtual, imagemJan
     aguardar.aguardarJanelaPorImagem(imagemJanelaAguardar, nomeJanelaAguardar)
 
 
-def fracionarPlanoFiltro(xfamilia, yfamilia, 
-                         xrendFamilia, yrendFamilia, 
+def fracionarPlanoFiltro(xfamilia, yfamilia, xrendFamilia, yrendFamilia, 
                          xfiltro, yfiltro, 
                          xsaidaProd, ysaidaPrd,  
                          qtdClick, botaoMouse, 
