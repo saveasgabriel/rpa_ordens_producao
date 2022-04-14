@@ -33,8 +33,15 @@ def cursor(conn):
     if conn != None:
         cursor = conn.cursor()
         
-        def buscarEsacala():
-            cursor.execute("SELECT * from escala_abate;")
+        def buscarEsacala(codUnidade, data):
+            
+            # Definir coluna onde tem quantidade de animais 'quantidade_bois'
+            # Definir nome da tabela onde fará consulta 'escala_abate'
+            # Definir onde haverá a coluna com o cod da unidade 'cod_unidade'
+            # Definir onde haverá data do abate 'data_escala'
+            
+            cursor.execute("SELECT sum(quantidade_bois) from escala_abate where (cod_unidade = %s) and (data_escala = %s);",
+                           (codUnidade, data))
             return cursor.fetchall()
         
         def inserir_bd(nome, idade):
@@ -48,21 +55,17 @@ def cursor(conn):
         #inserir_bd('Dioginys', 20)
 
         nome_idade = selecionar_bd()
-        abate = buscarEsacala()
+        abate = buscarEsacala('70', '2022-04-22')
 
         for i, pessoa in enumerate(nome_idade):
-            print('Nome: ', pessoa[0])
-            print('Idade: ', pessoa[1])
+            print('Nome: ', pessoa[0], "|", 'Idade: ', pessoa[1])
             
         for x, boi in enumerate(abate):
-            print('ID: ', boi[0])
-            print('Sigla: ', boi[1])
-
-        #print(nome_idade)
-        #print(abate)
+            print('Soma de bois: ', boi[0])
 
         cursor.close()
         conn.close()
+        
     else:
         print('SEM CONEXÃO')
         
