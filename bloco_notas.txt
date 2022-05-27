@@ -4,12 +4,32 @@ Automatização do abate:
 141 - Abate Fiscal              |CONCLUÍDO COM EXCEL| 60 ordens -> 3 horas                  (3 min x 2 un x 26 day)
 463 - Despojo/Residuos/Farinha  |CONCLUÍDO COM EXCEL| 910 ordens -> 46 horas                (3 min x 36 un x 26 day)
 552 - Sangue Fetal              |EM ANDAMENTO, INTEGRAÇÃO DIRETA COM SQL| 936 ordens mês  -> 48h
-684 - Coração Peru              |EM ANDAMENTO, INTEGRAÇÃO DIRETA COM SQL| 364 ordens mês  -> h
+684 - Coração Peru              |EM ANDAMENTO, INTEGRAÇÃO DIRETA COM SQL| 364 ordens mês  -> 18h
 666 - Envoltórios               |EM ANDAMENTO, INTEGRAÇÃO DIRETA COM SQL| 936 ordens mês  -> 48h
 790 - ReRequarteio              |EM ANDAMENTO, INTEGRAÇÃO DIRETA COM SQL| 52 ordens mês   -> h
-2   - Miúdos                    |NÃO INICIADO| --> SERÁ INICIADO JÁ COM INTEGRAÇÃO COM SQL 936 ordens mês 78h
+FALTA ESPECIFICAR TRATATIVAS - 2   - Miúdos                    |NÃO INICIADO| --> SERÁ INICIADO JÁ COM INTEGRAÇÃO COM SQL 936 ordens mês 78h
+
+---------------------------------------------------------------------------------------------------------------------
+BOT NOVO - POR BANCO DE DADOS
+
+CRIADO - 426 - Reprocesso de Quarteio  
+CRIADO - 141 - Abate Fiscal            
+CRIADO - 463 - Despojo/Residuos/Farinha
+CRIADO - 552 - Sangue Fetal            
+CRIADO - 684 - Coração Peru            
+CRIADO - 666 - Envoltórios             
+CRIADO - 790 - ReRequarteio      
+
+# Pendencias
+
+1 - TRATATIVAS TIPO DE PRODUÇÃO 426
+2 - TIRAR PRODUTOS ESTOCÁVEIS DO TIPO 666
+3 - ACESSO A BASE DE DADOS DE PRODUÇÃO (HISTÓRICO E ANALÍTICO)
+4 - FALTA ESPECIFICAR TRATATIVAS - 2 - MIUDOS
+5 - REALIZAR INTERFACE WEB
 
 
-STEP DE MANIPULAÇÃO DE DATAS
-STEP DE FRACIONAR PLANO
-STEP DE INCLUIR PARAMETROS SECUNDÁRIOS
+COLOCAR SEBO
+    224 - SEBO BOVINO 
+    230 - FARINHA DE CARNE E OSSOS DE  BOVINO
+    235 - DESPOJO DE ABATE DE BOVINO
